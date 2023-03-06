@@ -50,7 +50,12 @@ module.exports = {
           label: 'API',
           position: 'right',
         },
-        { to: 'blog', label: 'Blog', position: 'right' },
+        {
+          to: 'blog',
+          label: 'Blog',
+          position: 'right',
+          activeBasePath: 'blog',
+        },
         {
           href: 'https://discord.gg/FRRBdjemHV',
           label: 'Discord',
@@ -186,6 +191,7 @@ module.exports = {
             type: 'all',
             copyright: `Copyright © ${new Date().getFullYear()} Veramo`,
           },
+          postsPerPage: 1,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
